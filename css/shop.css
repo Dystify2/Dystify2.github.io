@@ -1,0 +1,291 @@
+#ShopContainer {
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  width: 100%;
+  min-height: 975px;
+  position: relative;
+}
+
+#ShopSidebar {
+  height: 100%;
+  background-color: #E0E0E0;
+  float: left;
+}
+
+#ShopSidebarTitle {
+  font-size: 25px;
+  padding: 10px 0px 0px 15px;
+  font-weight: bold;
+  color: #0097A7;
+}
+
+.ShopSidebarLink {
+  background-color: #D6D6D6;
+  padding: 5px 10px 5px 10px;
+  margin: 6px 20px 6px 10px;
+  border-radius: 20px;
+  border: 1px solid #8B8B8B;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ShopActiveCategory, .ShopSidebarLink:hover {
+  background-color: #C9C9C9;
+}
+
+#ShopContent {
+  padding-top: 10px;
+  height: 1125px;
+  overflow: auto;
+}
+
+#ShopContentHeader {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+#ShopContentTitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: #0097A7;
+  width: 80px;
+}
+
+#ShopWikiLink {
+  margin-top: 5px;
+}
+
+#ShopWikiLink i {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+#ShopAffordabilityFilter {
+  width: 250px;
+  padding-top: 5px;
+}
+
+#ShowOnlyItemsICanAffordCheckbox {
+  margin: 0;
+}
+
+#ShopAffordabilityFilter label {
+  padding-left: 5px;
+}
+
+#ShopContentSort {
+  text-align: right;
+  margin: 5px 10px 0 0;
+  position: relative;
+  flex-grow: 1;
+}
+
+#ShopContentSortDropdownLink {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#ShopContentSortSelected {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+}
+
+#ShopContentSort i {
+  color: #57595A;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#ShopSortMenu {
+  width: 130px;
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+  border: 1px solid #D3D3D3;
+  right: 0px;
+  text-align: left;
+}
+
+input[name="ShopSortOptions"] {
+  margin: 0 3px 0 10px;
+}
+
+#ShopCloseSortMenu {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+}
+
+#ShopItemList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ShopItem {
+  width: 250px;
+  margin: 0px 5px 10px 10px;
+  position: relative;
+  border: 1px solid #0097A7;
+  border-radius: 20px;
+  min-height: 350px;
+}
+
+.ShopItemImage {
+  height: 186px;
+  width: 248px;
+  border-radius: 20px 20px 0px 0;
+}
+
+.ShopItemName {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ShopItemDescription {
+  padding-left: 10px;
+  font-size: 14px;
+  height: 60px;
+  color: #57595A;
+}
+
+.ShopItemStock {
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.ShopItemOptions {
+  text-align: center;
+}
+
+.ShopItemOptions:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  border-bottom: 1px solid #8B8B8B;
+}
+
+.ShopItemPurchase {
+  margin-top: 3px;
+  padding-top: 5px;
+  height: 50px;
+  border-right: 1px solid #8B8B8B;
+  width: 124px;
+  float: left;
+}
+
+.ShopIcon {
+  font-size: 40px;
+  cursor: pointer;
+  color: #0097A7;;
+}
+
+.ShopIcon:hover {
+  color: #00808E;
+}
+
+.ShopOutOfStock {
+  color: #D3D3D3;
+}
+
+.ShopOutOfStock:hover {
+  color: #D3D3D3;
+}
+
+.ShopItemAbout {
+  float: right;
+  width: 124px;
+}
+
+.ShopInfo {
+  padding-top: 8px;
+}
+
+.ShopItemPriceOverlay {
+  position: absolute;
+  top: 150px;
+  left: -8px;
+  background-color: #DDDDDD;
+  padding: 0px 20px 0px 7px;
+  border-radius: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #696969;
+  font-size: 18px;
+}
+
+.ShopRupeeImage {
+  padding: 0px 4px 4px 0px;
+}
+
+.ShopItemPriceOverlay span {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+}
+
+.ShopItemHasDiscount {
+  text-decoration: line-through;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+}
+
+#ShopLoginOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+}
+
+#ShopLoginOverlayBackground {
+  position: absolute;
+  top: 0;
+  background-color: #00525b;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+#ShopLoginOverlayOptions {
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+#ShopLoginOverlayOptionsText {
+  color: #000000;
+  padding: 20px 0 10px 0;
+}
+
+#ShopLoginOverlayLogin {
+  border-radius: 10px;
+}
+
+#RequestsContainer {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+#TabContainer {
+  display: flex;
+}
+
+/* Temp Stuff */
+
+.ShopTemp {
+  margin-left: 10px;
+}
+
+.ShopTemp label {
+  font-weight: bold;
+}
